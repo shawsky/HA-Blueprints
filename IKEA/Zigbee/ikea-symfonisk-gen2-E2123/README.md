@@ -13,7 +13,7 @@ NOTE: It’s best to select “Legacy = False” in the specific settings for yo
 
 # Blueprint
 
-[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://github.com/user-attachments/assets/ea8fffc7-f88b-4f84-b549-05403cc50cba)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%253A%252F%252Fgithub.com%252Fshawsky%252FHA-Blueprints%252Fblob%252Fmain%252FIKEA%252FZigbee%252Fikea-symfonisk-gen2-E2123%252Fikea-symfonisk-gen2-media-control.yaml)
+[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://github.com/user-attachments/assets/ea8fffc7-f88b-4f84-b549-05403cc50cba)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Fshawsky%2FHA-Blueprints%2Fblob%2Fmain%2FIKEA%2FZigbee%2Fikea-symfonisk-gen2-E2123%2Fikea-symfonisk-gen2-media-control.yaml)
 
 Setup
 Select your device, adjust your MQTT base topic if required, choose a media_player to control or a media_player that will act as the main device in a scenario where other players are grouped with it. Finally, configure the “dot” buttons as needed
