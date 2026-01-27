@@ -3,7 +3,7 @@
 
 This is a blueprint to support controlling a media player with an Ikea Symfonisk Gen2 remote. It's designed to work with the device added via Zigbee2MQTT (Z2M) only.
 
-<img width="218" height="208" alt="image" src="https://github.com/user-attachments/assets/57ef256c-e59f-4791-a921-a4d801452e26" />
+<img width="218" height="208" alt="image" src="https://github.com/user-attachments/assets/634b6220-8632-4682-ba24-5680739ee8e7" />
 
 I wanted to allow for the use of more than one of these devices but also avoid the need to find and copy and paste topic strings from the entity MQTT settings. You can just select your device from the list :slight_smile: 
 
@@ -13,17 +13,12 @@ NOTE: It’s best to select “Legacy = False” in the specific settings for yo
 
 # Blueprint
 
-[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://github.com/user-attachments/assets/7eb5d903-592f-49cd-8bb4-47ce3d29552b)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Fshawsky%2FIKEASymfoniskGen2Blueprint%2Fblob%2Fmain%2Fz2m-ikea-symfonisk-gen2-e2123-media-control.yaml)
-
-<!--<a href="http://www.google.com">
-<img width="213" height="28" alt="image" src="https://github.com/user-attachments/assets/7eb5d903-592f-49cd-8bb4-47ce3d29552b"  />
-</a>
--->
+[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://github.com/user-attachments/assets/ea8fffc7-f88b-4f84-b549-05403cc50cba)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%253A%252F%252Fgithub.com%252Fshawsky%252FHA-Blueprints%252Fblob%252Fmain%252FIKEA%252FZigbee%252Fikea-symfonisk-gen2-E2123%252Fikea-symfonisk-gen2-media-control.yaml)
 
 Setup
 Select your device, adjust your MQTT base topic if required, choose a media_player to control or a media_player that will act as the main device in a scenario where other players are grouped with it. Finally, configure the “dot” buttons as needed
 
-<img width="988" height="1000" alt="image" src="https://github.com/user-attachments/assets/785ff0c9-ed26-4710-b832-68e9bbd51dd5" />
+<img width="494" height="500" alt="image" src="https://github.com/user-attachments/assets/d0964ab7-c9b1-4435-9634-8815e3655edc" />
 
 **Usage**
 
