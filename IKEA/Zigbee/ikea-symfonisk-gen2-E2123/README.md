@@ -15,10 +15,17 @@ NOTE: It’s best to select “Legacy = False” in the specific settings for yo
 
 [![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://github.com/user-attachments/assets/ea8fffc7-f88b-4f84-b549-05403cc50cba)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Fshawsky%2FHA-Blueprints%2Fblob%2Fmain%2FIKEA%2FZigbee%2Fikea-symfonisk-gen2-E2123%2Fikea-symfonisk-gen2-media-control.yaml)
 
-Setup
+**Manual Import URL**
+
+If the button above doesn't work, you can copy the URL below and paste it into the "Import Blueprint" dialog in Home Assistant:
+`https://github.com/shawsky/HA-Blueprints/blob/main/IKEA/Zigbee/ikea-symfonisk-gen2-E2123/ikea-symfonisk-gen2-media-control.yaml`
+
+
+**Setup**
+
 Select your device, adjust your MQTT base topic if required, choose a media_player to control or a media_player that will act as the main device in a scenario where other players are grouped with it. Finally, configure the “dot” buttons as needed
 
-<img width="494" height="500" alt="image" src="https://github.com/user-attachments/assets/d0964ab7-c9b1-4435-9634-8815e3655edc" />
+<img width="594" height="600" alt="image" src="https://github.com/user-attachments/assets/d0964ab7-c9b1-4435-9634-8815e3655edc" />
 
 **Usage**
 
@@ -29,9 +36,6 @@ Select your device, adjust your MQTT base topic if required, choose a media_play
 * :arrow_down_small: - Volume Down. Supports single press and hold
 * **Single Dot**  - Supports single, double and long press to fire one or more actions
 * **Double Dot** - Supports single, double and long press to fire one or more actions
-
-**Credits**
-Eric Kreuwels & Alex Austin for the original volume adjust aspects
 
 **Updates**
 
