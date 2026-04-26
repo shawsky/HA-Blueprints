@@ -1,4 +1,4 @@
-# IKEA Symfonisk Gen2 [E2123] Media Control v1.55a
+# IKEA Symfonisk Gen2 [E2123] Media Control v2.00
 # Home Assistant Blueprint
 
 This is a blueprint to support controlling a media player with an Ikea Symfonisk Gen2 remote. It's designed to work with the device added via Zigbee2MQTT (Z2M) only.
@@ -21,11 +21,32 @@ If the button above doesn't work, you can copy the URL below and paste it into t
 `https://github.com/shawsky/HA-Blueprints/blob/main/IKEA/Zigbee/ikea-symfonisk-gen2-E2123/ikea-symfonisk-gen2-media-control.yaml`
 
 
-**Setup**
+## Setup
 
-Select your device, adjust your MQTT base topic if required, choose a media_player to control or a media_player that will act as the main device in a scenario where other players are grouped with it. Finally, configure the “dot” buttons as needed
+### Basic Configuration
+Select your Symfonisk Gen2 device, adjust your MQTT base topic if required, and choose a media_player to control (or a media_player that will act as the main device in a scenario where other players are grouped with it).
 
-<img width="594" height="600" alt="image" src="https://github.com/user-attachments/assets/d0964ab7-c9b1-4435-9634-8815e3655edc" />
+### Dynamic Volume Control (Group vs. Room)
+You can choose to disable group volume control by using the Allow Group Volume Control option, it is enabled by default. If you want to use the option to dynamically switch between controlling the group volume and just the room volume, you must select an Input Helper (Boolean) to store the state.
+
+By default volume control will revert to group when Play/Pause is pressed, if you want to prevent this behaviour, turn off the Reset to Group Volume Control when Play/Pause pressed setting.
+
+Use the drop down to select which button on the Symfonisk to use to switch between Group and Room volume control. Note: If you've previously set an action on the button you select to switch between Group and Room volume control, it will no longer fire.
+
+The Volume Control Toggle option can be used to fire an action when switching between Group and Room volume control. This is useful if you have dashboards, indicators or other physical items you use to indicate state from your Home Assistant setup.
+
+### Volume Ducking
+You can enable and configure volume ducking, which briefly lowers the volume to provide audio feedback when you successfully toggle between group and room volume control. The slider allows you to choose how long the volume is ducked for.
+
+### Custom Actions & Buttons
+Configure the custom actions such as what happens when Play/Pause is pressed but no media is playing or queued and set up the actions for your "dot" buttons as needed.
+
+***Note***
+If you're not sure how to create an Input Helper: In Home Assistant, navigate to Settings > Devices & Services > Helpers. Click the + Create Helper button in the bottom right, select Toggle, give it a recognisable name (e.g., "Living Room Volume Mode"), and click Create. Finally, select this new helper in the blueprint config.
+
+<img width="2612" height="1835" alt="image" src="https://github.com/user-attachments/assets/78fdd2bc-068e-49b1-a0f8-1434a914a88c" />
+<img width="2580" height="1335" alt="image" src="https://github.com/user-attachments/assets/cc8bac40-2f28-4368-ba1d-7fd2775b2fb7" />
+
 
 **Usage**
 
@@ -38,6 +59,8 @@ Select your device, adjust your MQTT base topic if required, choose a media_play
 * **Double Dot** - Supports single, double and long press to fire one or more actions
 
 **Updates**
+
+2025-12-30 v2.00: Add group/room volume control and switching with volume ducking, action running when switching from group/room volume control. Action on Play/Pause when no media playing/queued.
 
 2024-04-16 v1.55: Add additional filtering to remove the false positives of the automations triggering for MQTT topics or where you run multiple Ikea E2123 devices. This should help clean up log book entries etc. Thanks kenno.
 
