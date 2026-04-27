@@ -27,7 +27,7 @@ If the button above doesn't work, you can copy the URL below and paste it into t
 Select your Symfonisk Gen2 device, adjust your MQTT base topic if required, and choose a media_player to control (or a media_player that will act as the main device in a scenario where other players are grouped with it).
 
 ### Dynamic Volume Control (Group vs. Room)
-You can choose to disable group volume control by using the Allow Group Volume Control option, it is enabled by default. If you want to use the option to dynamically switch between controlling the group volume and just the room volume, you must select an Input Helper (Boolean) to store the state.
+You can choose to disable group volume control by using the Allow Group Volume Control option, it is enabled by default. If you want to use the option to dynamically switch between controlling the group volume and just the room volume, you must select an Input Helper (Boolean) to store the state. If you have multiple Symfonisk devices and use this Blueprint with multipe automations you will need an input helper per device.
 
 By default volume control will revert to group when Play/Pause is pressed, if you want to prevent this behaviour, turn off the Reset to Group Volume Control when Play/Pause pressed setting.
 
