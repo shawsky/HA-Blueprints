@@ -13,7 +13,7 @@ blueprint:
 # Volume changes originally partially based on https://gist.github.com/erkr/a437ebcb98a2b5ba2deebabd02f5ffae Eric Kreuwels
 # and https://gist.github.com/alexwmaustin/2c25cfa1a0ade1ab9fc1ef0940289672 Alex Austin
 
-  name: Z2M - IKEA Symfonisk sound controller GEN2 for media v3.00
+  name: Z2M - IKEA Symfonisk sound controller GEN2 for media (v3.00)
   author: Shawsky
   description: 
     'Control the selected media player (and any joined to it in a group) with an IKEA Symfonisk sound controller GEN2 via Zigbee2MQTT (Z2M)
