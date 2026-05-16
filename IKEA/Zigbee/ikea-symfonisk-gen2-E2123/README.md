@@ -1,4 +1,4 @@
-# IKEA Symfonisk Gen2 [E2123] Media Control v2.00
+# IKEA Symfonisk Gen2 [E2123] Media Control v2.00 / Experimental V3.00
 # Home Assistant Blueprint
 
 This is a blueprint to support controlling a media player with an Ikea Symfonisk Gen2 remote. It's designed to work with the device added via Zigbee2MQTT (Z2M) only.
@@ -20,6 +20,22 @@ NOTE: It’s best to select “Legacy = False” in the specific settings for yo
 If the button above doesn't work, you can copy the URL below and paste it into the "Import Blueprint" dialog in Home Assistant:
 `https://github.com/shawsky/HA-Blueprints/blob/main/IKEA/Zigbee/ikea-symfonisk-gen2-E2123/ikea-symfonisk-gen2-media-control.yaml`
 
+**Experimental v3.00**
+
+The wildcard MQTT subscription used in v2.00 causes Home Assistant to register its subscription twice. This not only impacts this Blueprint but causes problems across all Blueprints. Not sure if this is a problem to be fixed in HA or by design but it's problematic. If this affects you and you don't want to make config changes to mitigate then you should use this version.
+
+Having explored various options to resolve mostly frustrated by the limited templates support in trigger variables the Blueprint has been migrated to use events. This is the future direction of Home Assitant, however support in Zigbee2MQTT is still experimental.
+
+To use events you need to go to Zigbee2MQTT settings, choose Home Assistant Integration and enable the setting below and restart Z2M. It will then add an event entity called "Action":
+
+<img width="2800" height="200" alt="image" src="https://github.com/user-attachments/assets/cdd209e7-1ace-4138-9313-03abfb772a8b" />
+
+[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://github.com/user-attachments/assets/ea8fffc7-f88b-4f84-b549-05403cc50cba)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Fshawsky%2FHA-Blueprints%2Fblob%2Fmain%2FIKEA%2FZigbee%2Fikea-symfonisk-gen2-E2123%2Fikea-symfonisk-gen2-media-control-event.yaml)
+
+**Experimental Manual Import URL**
+
+If the button above doesn't work, you can copy the URL below and paste it into the "Import Blueprint" dialog in Home Assistant:
+`https://github.com/shawsky/HA-Blueprints/blob/main/IKEA/Zigbee/ikea-symfonisk-gen2-E2123/ikea-symfonisk-gen2-media-control-event.yaml`
 
 ## Setup
 
