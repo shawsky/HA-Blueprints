@@ -30,6 +30,10 @@ To use events you need to go to Zigbee2MQTT settings, choose Home Assistant Inte
 
 <img width="2800" height="200" alt="image" src="https://github.com/user-attachments/assets/cdd209e7-1ace-4138-9313-03abfb772a8b" />
 
+When using the Blueprint, you'll no longer choose the IKEA device, instead you will select the action entity created by Z2M, example below showing the automation selector and the entity visible on the device info screen:
+<img width="1040" height="90" alt="image" src="https://github.com/user-attachments/assets/3865125d-8ba4-403f-b618-252b4ab4363d" />
+<img width="322" height="137" alt="image" src="https://github.com/user-attachments/assets/3c130100-4733-4a94-a620-e714c0c5d21e" />
+
 [![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://github.com/user-attachments/assets/ea8fffc7-f88b-4f84-b549-05403cc50cba)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Fshawsky%2FHA-Blueprints%2Fblob%2Fmain%2FIKEA%2FZigbee%2Fikea-symfonisk-gen2-E2123%2Fikea-symfonisk-gen2-media-control-event.yaml)
 
 **Experimental Manual Import URL**
