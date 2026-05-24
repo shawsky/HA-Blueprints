@@ -1,6 +1,6 @@
 blueprint:
 # Media control via IKEA Symfonisk Gen2 - Shawsky April 2023 - 2026
-# Updated May 2026 v2.01 - Minor bug fix on group/individual volume control
+# Updated May 2026 v3.01 - Minor bug fix on group/individual volume control
 # Updated May 2026 v3.00 - Rework input selection and trigger to use Z2M experimental event entities to avoid MQTT wildcard subscription
 # Updated December 2025 v2.00 - Add volume ducking, action running when switching from group/single volume control. Action on Play/Pause when no media playing/queued
 # Updated June 2025 - Add multiple options for group or single room volume controls
@@ -14,7 +14,7 @@ blueprint:
 # Volume changes originally partially based on https://gist.github.com/erkr/a437ebcb98a2b5ba2deebabd02f5ffae Eric Kreuwels
 # and https://gist.github.com/alexwmaustin/2c25cfa1a0ade1ab9fc1ef0940289672 Alex Austin
 
-  name: Z2M - IKEA Symfonisk sound controller GEN2 for media (v3.1)
+  name: Z2M - IKEA Symfonisk sound controller GEN2 for media (v3.01)
   author: Shawsky
   description: 
     'Control the selected media player (and any joined to it in a group) with an IKEA Symfonisk sound controller GEN2 via Zigbee2MQTT (Z2M)
