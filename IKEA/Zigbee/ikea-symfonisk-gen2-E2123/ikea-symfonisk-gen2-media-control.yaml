@@ -1,5 +1,6 @@
 blueprint:
 # Media control via IKEA Symfonisk Gen2 - Shawsky April 2023 - 2026
+# Updated May 2026 v2.01 - Minor bug fix on group/individual volume control
 # Updated December 2025 v2.00 - Add volume ducking, action running when switching from group/single volume control. Action on Play/Pause when no media playing/queued
 # Updated June 2025 - Add multiple options for group or single room volume controls
 # Updated April 2024 - Add additional filtering to prevent triggering from other devices/false positives. Thanks kenno.
@@ -12,7 +13,7 @@ blueprint:
 # Volume changes originally partially based on https://gist.github.com/erkr/a437ebcb98a2b5ba2deebabd02f5ffae Eric Kreuwels
 # and https://gist.github.com/alexwmaustin/2c25cfa1a0ade1ab9fc1ef0940289672 Alex Austin
 
-  name: Z2M - IKEA Symfonisk sound controller GEN2 for media (v2.0)
+  name: Z2M - IKEA Symfonisk sound controller GEN2 for media (v2.1)
   author: Shawsky
   description: 
     'Control the selected media player (and any joined to it in a group) with an IKEA Symfonisk sound controller GEN2 via Zigbee2MQTT (Z2M)
@@ -197,7 +198,14 @@ action:
       dot_button_for_volume_control: !input dot_button_change_volume_control
       reset_group_volume: !input reset_to_group_control_on_playpause
       helper: !input 'group_volume_helper'
-      group_volume_control_state: "{{ states(helper) if states(helper) not in ['', 'none', 'unknown', 'unavailable'] else 'off' }}"
+      group_volume_control_state: >-
+        {% if states(helper) not in ['', 'none', 'unknown', 'unavailable'] %}
+          {{ states(helper) }}
+        {% elif group_control %}
+          on
+        {% else %}
+          off
+        {% endif %}
 
   - choose:
     - conditions:
