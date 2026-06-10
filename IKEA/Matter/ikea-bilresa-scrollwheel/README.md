@@ -22,12 +22,12 @@ clockwise scroll, anti-clockwise scroll, button press.
 
 # Blueprint
 
-[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://github.com/user-attachments/assets/ea8fffc7-f88b-4f84-b549-05403cc50cba)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Fshawsky%2FHA-Blueprints%2Fblob%2Fc4a462e78bbba6f1a0675a791a5983255b64305f%2FIKEA%2FMatter%2Fikea-bilresa-scrollwheel-media-control.yaml)
+[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://github.com/user-attachments/assets/ea8fffc7-f88b-4f84-b549-05403cc50cba)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Fshawsky%2FHA-Blueprints%2Fblob%2Fmain%2FIKEA%2FMatter%2Fikea-bilresa-scrollwheel%2Fikea-bilresa-scrollwheel-media-control.yaml)
 
 **Manual Import URL**
 
 If the button above doesn't work, you can copy the URL below and paste it into the "Import Blueprint" dialog in Home Assistant:
-`https://github.com/shawsky/HA-Blueprints/blob/main/IKEA/Matter/ikea-bilresa-scrollwheel-media-control.yaml`
+`https://github.com/shawsky/HA-Blueprints/blob/main/IKEA/Matter/ikea-bilresa-scrollwheel/ikea-bilresa-scrollwheel-media-control.yaml`
 
 ## Basic Configuration
 Select your Bilresa Scrollwheel device, then you have three channels which can be applied to different media players, each with their own configuration. All of options below apply per channel.
