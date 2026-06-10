@@ -10,3 +10,8 @@ Click the links to read information for each Blueprint or view the content of th
 | Device | Description | Links | Experimental |
 | :--- | :--- | :--- | :--- |
 | **Symfonisk Gen 2 E2123** | Multi function media controller | [Documentation](IKEA/Zigbee/ikea-symfonisk-gen2-E2123/README.md) \| [Blueprint YAML](IKEA/Zigbee/ikea-symfonisk-gen2-E2123/ikea-symfonisk-gen2-media-control.yaml) | [Blueprint YAML](IKEA/Zigbee/ikea-symfonisk-gen2-E2123/ikea-symfonisk-gen2-media-control-event.yaml) |
+
+### IKEA Matter
+| Device | Description | Links | Experimental |
+| :--- | :--- | :--- | :--- |
+| **Bilresa Scrollwheel** | Multi function media controller | [Documentation](IKEA/Matter/ikea-bilresa-scrollwheel/README.md)  \| [Blueprint YAML](IKEA/Matter/ikea-bilresa-scrollwheel/ikea-bilresa-scrollwheel-media-control.yaml) |
