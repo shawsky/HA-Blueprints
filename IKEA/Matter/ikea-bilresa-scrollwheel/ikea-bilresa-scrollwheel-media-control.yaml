@@ -1,7 +1,7 @@
 blueprint:
   # Media control via IKEA BILRESA Scroll Wheel (Matter) - Shawsky May 2026
 
-  name: Matter - IKEA BILRESA Scroll Wheel for media (v1.01)
+  name: Matter - IKEA BILRESA Scroll Wheel for media (v1.1)
   author: Shawsky
   description: >
     Controls up to 3 media players using an IKEA BILRESA Scroll Wheel via
