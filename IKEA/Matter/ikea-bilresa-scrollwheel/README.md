@@ -1,4 +1,4 @@
-# IKEA Bilresa Media Control v1.01
+# IKEA Bilresa Media Control v1.00
 # Home Assistant Blueprint
 
 This is a blueprint to support controlling a media player with an Ikea Bilresa scrollwheel remote. It's designed to use the device's native Matter connection. This Blueprint is a conversion of my Ikea Symfonisk Gen2 Blueprint.
@@ -83,5 +83,5 @@ This option can be used to fire an action when switching between Group and Room 
 To change channel, press the seconday button on the remote (the bottom half where the LEDs are). This is local to the remote only and no data is passed to Home Assistant at this point.
 
 **Updates**
-2026-06-15 v1.01:  Add support for Music Assistant states to ensure not playing/nothing queued works correctly
-2026-06-10 v1.0:   First release
+
+2026-06-10 v1.0: First release
